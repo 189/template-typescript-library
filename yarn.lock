@@ -1323,10 +1323,10 @@
   resolved "https://registry.nlark.com/@types/node/download/@types/node-15.12.1.tgz?cache=0&sync_timestamp=1622824584187&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-15.12.1.tgz#9b60797dee1895383a725f828a869c86c6caa5c2"
   integrity sha1-m2B5fe4YlTg6cl+CioachsbKpcI=
 
-"@types/node@^10.11.0":
-  version "10.17.60"
-  resolved "https://registry.nlark.com/@types/node/download/@types/node-10.17.60.tgz?cache=0&sync_timestamp=1622824584187&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
-  integrity sha1-NfPWIT2u2V2n8Pc+dbzGmA6QWXs=
+"@types/node@^14":
+  version "14.17.2"
+  resolved "https://registry.nlark.com/@types/node/download/@types/node-14.17.2.tgz?cache=0&sync_timestamp=1622824584187&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fnode%2Fdownload%2F%40types%2Fnode-14.17.2.tgz#1e94476db57ec93a372c7f7d29aa5707cfb92339"
+  integrity sha1-HpRHbbV+yTo3LH99KapXB8+5Izk=
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
@@ -1338,12 +1338,25 @@
   resolved "https://registry.nlark.com/@types/parse-json/download/@types/parse-json-4.0.0.tgz?cache=0&sync_timestamp=1621242399300&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fparse-json%2Fdownload%2F%40types%2Fparse-json-4.0.0.tgz#2f8bb441434d163b35fb8ffdccd7138927ffb8c0"
   integrity sha1-L4u0QUNNFjs1+4/9zNcTiSf/uMA=
 
+"@types/prompt@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.nlark.com/@types/prompt/download/@types/prompt-1.1.0.tgz#f165c4cd3c92857f651d5de395863c58218ede36"
+  integrity sha1-8WXEzTyShX9lHV3jlYY8WCGO3jY=
+  dependencies:
+    "@types/node" "*"
+    "@types/revalidator" "*"
+
 "@types/retry@^0.12.0":
   version "0.12.0"
   resolved "https://registry.nlark.com/@types/retry/download/@types/retry-0.12.0.tgz?cache=0&sync_timestamp=1621244125534&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fretry%2Fdownload%2F%40types%2Fretry-0.12.0.tgz#2b35eccfcee7d38cd72ad99232fbd58bffb3c84d"
   integrity sha1-KzXsz87n04zXKtmSMvvVi/+zyE0=
 
-"@types/shelljs@^0.8.0":
+"@types/revalidator@*":
+  version "0.3.7"
+  resolved "https://registry.nlark.com/@types/revalidator/download/@types/revalidator-0.3.7.tgz#cf649039a3b5fa231c16508bcaa8923b66d02cf9"
+  integrity sha1-z2SQOaO1+iMcFlCLyqiSO2bQLPk=
+
+"@types/shelljs@^0.8.0", "@types/shelljs@^0.8.8":
   version "0.8.8"
   resolved "https://registry.nlark.com/@types/shelljs/download/@types/shelljs-0.8.8.tgz?cache=0&sync_timestamp=1621244667531&other_urls=https%3A%2F%2Fregistry.nlark.com%2F%40types%2Fshelljs%2Fdownload%2F%40types%2Fshelljs-0.8.8.tgz#e439c69929b88a2c8123c1a55e09eb708315addf"
   integrity sha1-5DnGmSm4iiyBI8GlXgnrcIMVrd8=
@@ -2873,7 +2886,7 @@ debug@^3.1.0:
   dependencies:
     ms "^2.1.1"
 
-debuglog@*, debuglog@^1.0.1:
+debuglog@^1.0.1:
   version "1.0.1"
   resolved "https://registry.nlark.com/debuglog/download/debuglog-1.0.1.tgz#aa24ffb9ac3df9a2351837cfb2d279360cd78492"
   integrity sha1-qiT/uaw9+aI1GDfPstJ5NgzXhJI=
@@ -4387,7 +4400,7 @@ import-local@^1.0.0:
     pkg-dir "^2.0.0"
     resolve-cwd "^2.0.0"
 
-imurmurhash@*, imurmurhash@^0.1.4:
+imurmurhash@^0.1.4:
   version "0.1.4"
   resolved "https://registry.nlark.com/imurmurhash/download/imurmurhash-0.1.4.tgz#9218b9b2b928a238b13dc4fb6b6d576f231453ea"
   integrity sha1-khi5srkoojixPcT7a21XbyMUU+o=
@@ -5813,11 +5826,6 @@ lockfile@^1.0.4:
   dependencies:
     signal-exit "^3.0.2"
 
-lodash._baseindexof@*:
-  version "3.1.0"
-  resolved "https://registry.nlark.com/lodash._baseindexof/download/lodash._baseindexof-3.1.0.tgz#fe52b53a1c6761e42618d654e4a25789ed61822c"
-  integrity sha1-/lK1OhxnYeQmGNZU5KJXie1hgiw=
-
 lodash._baseuniq@~4.6.0:
   version "4.6.0"
   resolved "https://registry.nlark.com/lodash._baseuniq/download/lodash._baseuniq-4.6.0.tgz#0ebb44e456814af7905c6212fa2c9b2d51b841e8"
@@ -5826,32 +5834,10 @@ lodash._baseuniq@~4.6.0:
     lodash._createset "~4.0.0"
     lodash._root "~3.0.0"
 
-lodash._bindcallback@*:
-  version "3.0.1"
-  resolved "https://registry.nlark.com/lodash._bindcallback/download/lodash._bindcallback-3.0.1.tgz#e531c27644cf8b57a99e17ed95b35c748789392e"
-  integrity sha1-5THCdkTPi1epnhftlbNcdIeJOS4=
-
-lodash._cacheindexof@*:
-  version "3.0.2"
-  resolved "https://registry.nlark.com/lodash._cacheindexof/download/lodash._cacheindexof-3.0.2.tgz#3dc69ac82498d2ee5e3ce56091bafd2adc7bde92"
-  integrity sha1-PcaayCSY0u5ePOVgkbr9Ktx73pI=
-
-lodash._createcache@*:
-  version "3.1.2"
-  resolved "https://registry.nlark.com/lodash._createcache/download/lodash._createcache-3.1.2.tgz#56d6a064017625e79ebca6b8018e17440bdcf093"
-  integrity sha1-VtagZAF2JeeevKa4AY4XRAvc8JM=
-  dependencies:
-    lodash._getnative "^3.0.0"
-
 lodash._createset@~4.0.0:
   version "4.0.3"
   resolved "https://registry.nlark.com/lodash._createset/download/lodash._createset-4.0.3.tgz#0f4659fbb09d75194fa9e2b88a6644d363c9fe26"
   integrity sha1-D0ZZ+7CddRlPqeK4imZE02PJ/iY=
-
-lodash._getnative@*, lodash._getnative@^3.0.0:
-  version "3.9.1"
-  resolved "https://registry.npm.taobao.org/lodash._getnative/download/lodash._getnative-3.9.1.tgz#570bc7dede46d61cdcde687d65d3eecbaa3aaff5"
-  integrity sha1-VwvH3t5G1hzc3mh9ZdPuy6o6r/U=
 
 lodash._reinterpolate@^3.0.0:
   version "3.0.0"
@@ -5912,11 +5898,6 @@ lodash.map@^4.5.1:
   version "4.6.0"
   resolved "https://registry.nlark.com/lodash.map/download/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
   integrity sha1-dx7Hg540c9nEzeKLGTlMNWL09tM=
-
-lodash.restparam@*:
-  version "3.6.1"
-  resolved "https://registry.nlark.com/lodash.restparam/download/lodash.restparam-3.6.1.tgz#936a4e309ef330a7645ed4145986c85ae5b20805"
-  integrity sha1-k2pOMJ7zMKdkXtQUWYbIWuWyCAU=
 
 lodash.set@^4.3.2:
   version "4.3.2"
@@ -9373,10 +9354,10 @@ typescript@3.0.x:
   resolved "https://registry.nlark.com/typescript/download/typescript-3.0.3.tgz?cache=0&sync_timestamp=1622878959854&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftypescript%2Fdownload%2Ftypescript-3.0.3.tgz#4853b3e275ecdaa27f78fda46dc273a7eb7fc1c8"
   integrity sha1-SFOz4nXs2qJ/eP2kbcJzp+t/wcg=
 
-typescript@^3.0.3:
-  version "3.9.9"
-  resolved "https://registry.nlark.com/typescript/download/typescript-3.9.9.tgz?cache=0&sync_timestamp=1622878959854&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftypescript%2Fdownload%2Ftypescript-3.9.9.tgz#e69905c54bc0681d0518bd4d587cc6f2d0b1a674"
-  integrity sha1-5pkFxUvAaB0FGL1NWHzG8tCxpnQ=
+typescript@^4.3.2:
+  version "4.3.2"
+  resolved "https://registry.nlark.com/typescript/download/typescript-4.3.2.tgz?cache=0&sync_timestamp=1622878959854&other_urls=https%3A%2F%2Fregistry.nlark.com%2Ftypescript%2Fdownload%2Ftypescript-4.3.2.tgz#399ab18aac45802d6f2498de5054fcbbe716a805"
+  integrity sha1-OZqxiqxFgC1vJJjeUFT8u+cWqAU=
 
 uglify-js@^3.1.4:
   version "3.13.9"

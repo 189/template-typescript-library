@@ -12,7 +12,7 @@ const replace = require("replace-in-file");
 
 // Note: These should all be relative to the project root directory
 const rmDirs = [".git"];
-const rmFiles = [".all-contributorsrc", ".gitattributes"];
+const rmFiles = [".all-contributorsrc"];
 const modifyFiles = [
   "LICENSE",
   "package.json",

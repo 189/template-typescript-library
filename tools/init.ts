@@ -29,7 +29,7 @@ const promptSchemaLibraryName: prompt.Schema = {
   properties: {
     library: {
       description: colors.cyan("What do you want the library to be called? (use kebab-case)"),
-      pattern: /^[a-z]+(\-[a-z]+)*$/,
+      pattern: /^[a-z]+(-[a-z]+)*$/,
       type: "string",
       required: true,
       message: '"kebab-case" uses lowercase letters, and hyphens for any punctuation'
@@ -122,6 +122,7 @@ function libraryNameSuggestedAccept() {
  * an underscore (as it's a word character), and replaces it with a dash.
  * Any leading or trailing dashes are then removed, before the string is
  * lowercased and returned
+ *
  */
 function libraryNameSuggested() {
   return path
@@ -197,7 +198,7 @@ function modifyContents(libraryName: string, username: string, usermail: string)
 
   let files = modifyFiles.map(f => path.resolve(__dirname, "..", f));
   try {
-    const changes = replace.sync({
+    replace.sync({
       files,
       from: [/--libraryname--/g, /--username--/g, /--usermail--/g],
       to: [libraryName, username, usermail]
@@ -218,7 +219,7 @@ function modifyContents(libraryName: string, username: string, usermail: string)
 function renameItems(libraryName: string) {
   console.log(colors.underline.white("Renamed"));
 
-  renameFiles.forEach(function(files) {
+  renameFiles.forEach(files => {
     // Files[0] is the current filename
     // Files[1] is the new name
     let newFilename = files[1].replace(/--libraryname--/g, libraryName);

@@ -1,1 +1,4 @@
 tools/* linguist-vendored=false
+*.js    eol=lf
+*.jsx   eol=lf
+*.json  eol=lf

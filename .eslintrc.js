@@ -11,5 +11,8 @@ module.exports = {
     sourceType: "module"
   },
   plugins: ["@typescript-eslint"],
-  rules: {}
+  rules: {
+    "require-jsdoc": "off",
+    "operator-linebreak": "off"
+  }
 };

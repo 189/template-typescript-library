@@ -16,6 +16,6 @@
     "declarationDir": "dist/types",
     "outDir": "dist/lib"
   },
-  "include": ["src"],
+  "include": ["types", "src"],
   "exclude": ["node_modules", "./dist"]
 }

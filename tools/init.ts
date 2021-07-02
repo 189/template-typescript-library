@@ -136,7 +136,7 @@ function libraryNameSuggested() {
  * Checks if the suggested library name is the default, which is 'typescript-library-starter'
  */
 function libraryNameSuggestedIsDefault() {
-  if (libraryNameSuggested() === "typescript-library-starter") {
+  if (libraryNameSuggested() === "template-typescript-libuary") {
     return true;
   }
 

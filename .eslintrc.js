@@ -1,18 +1,25 @@
 module.exports = {
   env: {
     browser: true,
-    node: true,
-    es2021: true
+    es2021: true,
+    commonjs: true,
+    amd: true,
   },
-  extends: ["eslint:recommended", "plugin:@typescript-eslint/recommended", "@btboy/eslint-config"],
-  parser: "@typescript-eslint/parser",
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:prettier/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    ecmaVersion: 12,
-    sourceType: "module"
+    ecmaVersion: 'latest',
+    sourceType: 'module',
   },
-  plugins: ["@typescript-eslint"],
+  plugins: ['@typescript-eslint', 'prettier'],
   rules: {
-    "require-jsdoc": "off",
-    "operator-linebreak": "off"
-  }
-};
+    indent: ['error', 2],
+    'prefer-const': 'off',
+    'linebreak-style': ['error', 'unix'],
+    '@typescript-eslint/no-var-requires': 'off',
+  },
+}

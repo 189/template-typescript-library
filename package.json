@@ -31,12 +31,11 @@
     "deploy-docs": "ts-node --project tools/tsconfig.tools.json tools/gh-pages-publish",
     "postinstall": "ts-node --project tools/tsconfig.tools.json tools/init.ts ",
     "report-coverage": "cat ./coverage/lcov.info | coveralls",
-    "commit": "git-cz",
     "prepare": "husky install"
   },
   "lint-staged": {
     "{src,test}/**/*.ts": [
-      "lint-eslint",
+      "npm run lint-eslint",
       "prettier --write",
       "git add"
     ]

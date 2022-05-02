@@ -6,7 +6,7 @@ import { mv, rm, which, exec } from 'shelljs'
 import colors from 'colors'
 import path from 'path'
 import { readFileSync, writeFileSync } from 'fs'
-import { fork } from 'child_process'
+import { fork, execSync } from 'child_process'
 
 const replace = require('replace-in-file')
 
@@ -167,11 +167,11 @@ function setupLibrary(libraryName: string) {
   )
 
   // Get the Git username and email before the .git directory is removed
-  const username = exec('git config user.name').stdout.trim()
-  const usermail = exec('git config user.email').stdout.trim()
+  const username = execSync('git config user.name').toString().trim()
+  const usermail = execSync('git config user.email').toString().trim()
 
   // Init husky
-  exec('npx husky-init && yarn')
+  exec('npx husky-init')
   exec(`npx husky add .husky/commit-msg 'npx --no commitlint --edit "$1"'`)
 
   removeItems()

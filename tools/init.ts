@@ -172,7 +172,7 @@ function setupLibrary(libraryName: string) {
 
   // Init husky
   exec('npx husky-init')
-  exec(`npx husky add .husky/commit-msg 'npx --no commitlint --edit "$1"'`)
+  exec(`npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'`)
 
   removeItems()
 

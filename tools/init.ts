@@ -19,6 +19,7 @@ const modifyFiles = [
   'rollup.config.ts',
   'test/library.test.ts',
   'tools/gh-pages-publish.ts',
+  'tools/docs.ts',
 ]
 const renameFiles = [
   ['src/library.ts', 'src/--libraryname--.ts'],
@@ -172,7 +173,9 @@ function setupLibrary(libraryName: string) {
 
   // Init husky
   exec('npx husky-init')
-  exec(`npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'`)
+  exec(
+    `npx husky add .husky/commit-msg 'npx --no-install commitlint --edit "$1"'`
+  )
 
   removeItems()
 
